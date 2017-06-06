@@ -190,7 +190,7 @@ extension Data {
 //test
 do {
     let dir: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last! as URL
-    let url = dir.appendingPathComponent("logFile.txt")
+    let url = dir.appendingPathComponent("result.txt")
     try "Test \(Date())".appendLineToURL(fileURL: url as URL)
     let result = try String(contentsOf: url as URL, encoding: String.Encoding.utf8)
 }
